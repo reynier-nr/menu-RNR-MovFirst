@@ -1,0 +1,89 @@
+/*DOCUMENTO CSS*/
+
+* { margin: 0px;
+    padding: 0px;
+    font-size: 100%;}
+
+header { background-color: #b2fab2;
+         display: block;
+         width: 100%;
+         min-height: 1px;
+         overflow: hidden;}
+
+.menu { width: 100%;
+        min-height: 60px;
+        position: absolute;
+        margin-left: -100%;
+        margin-top: 42px;
+        background-color: #b2fab2;
+        overflow: hidden;}
+
+.menu ul { display: flex;
+           flex-flow: column;
+           width: 100%;
+           min-height: 60px;
+           list-style-type: none;}
+
+
+.menu li { width: 100%;
+           min-height: 1px;}
+
+.menu ul li a { line-height: 3.6;
+                display: block;
+                width: 100%;
+                min-height: 60px;
+                text-decoration: none;
+                box-sizing: border-box;
+                padding: 0px 12px 0px 12px;
+                font-family: arial;
+                color: black;}
+
+.menu ul li a:hover, #menu ul li a:active  { background-color: rgba(0, 0, 0, 0.35);}
+
+#btn-menu { display: none;}
+
+header label { display: block;
+              width: 40px;
+              float: right;
+              min-height: 40px;
+              padding: 12px;
+              cursor: pointer;
+              box-sizing: border-box; }
+
+header label:hover, .menu label:active { background-color: rgba(0, 0, 0, 0.34); }
+
+#btn-menu:checked ~ .menu { margin-left: 0;
+                            
+                            
+}
+
+
+/*------MEDIA QUERIES------*/
+
+/*600 breakpoint*/
+@media only screen and (min-width: 600px) {
+    
+    .menu { margin-left: 0;
+            margin-top: 0px;}
+    
+    header label { display: none;}
+    
+    .menu ul { flex-flow: row;
+               }
+    
+    .menu ul li a { text-align: center; }
+    
+    
+}
+
+/*600 breakpoint*/
+@media only screen and (min-width: 992px) { 
+
+    .menu ul { width: 992px;
+               margin: auto;}
+
+
+}
+
+
+
